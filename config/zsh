@@ -1,0 +1,14 @@
+export LC_ALL=en_US.UTF-8
+
+source ~/antigen.zsh
+antigen use oh-my-zsh
+
+antigen bundle mafredri/zsh-async
+antigen bundle sindresorhus/pure
+antigen bundle ssh-agent
+antigen bundle gpg-agent
+antigen bundle git
+antigen bundle command-not-found
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+antigen apply

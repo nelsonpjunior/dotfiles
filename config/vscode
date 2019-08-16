@@ -1,0 +1,30 @@
+{
+    "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
+    "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+    "editor.minimap.enabled": false,
+    "workbench.activityBar.visible": false,
+    "window.zoomLevel": 0,
+    "editor.fontFamily": "Operator Mono",
+    "eslint.autoFixOnSave": true,
+    "eslint.validate": [
+        {
+            "language": "vue",
+            "autoFix": true
+        },
+        {
+            "language": "html",
+            "autoFix": true
+        },
+        {
+            "language": "javascript",
+            "autoFix": true
+        }
+    ],
+    "editor.renderWhitespace": "all",
+    "files.exclude": {
+        "**/node_modules": true
+    },
+    "workbench.tips.enabled": false,
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    "workbench.startupEditor": "newUntitledFile"
+}

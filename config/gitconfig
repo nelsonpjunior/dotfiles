@@ -1,0 +1,56 @@
+[alias]
+  # --------------–-------–--------–--------–-------–--–-----
+  # More intuitive commands
+  # --------------–-------–--------–--------–-------–--–-----
+  # List tags
+  tags = tag -l
+  # List branches
+  branches = branch -a
+  # Reset (uncomitted) changes
+  abort = reset --hard HEAD
+  # Remove last commit
+  uncommit = reset HEAD~1
+  # Signed commit
+  commit = commit -S
+  # Rewrite last commit message
+  recommit = commit --amend -m
+  # Name/email of the author
+  whois = "!sh -c 'git log -i -1 --pretty=\"format:%an <%ae>\n\" --author=\"$1\"' -"
+  # Commit name
+  whatis = show -s --pretty='tformat:%h (%s, %ad)' --date=short
+  # Stashing include tracked files
+  stash = stash --include-untracked
+  # Cleanup merged branches
+  cleanup = "!git branch --merged | grep  -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d"
+  # Empty commit
+  empty-commit = commit --allow-empty -m
+  # Show a full log
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  
+[core]
+  editor = nano
+
+[apply]
+  whitespace = fix
+
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+
+[merge]
+  log = true
+
+[include]
+  path = .gitlocal
