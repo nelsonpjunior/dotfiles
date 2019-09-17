@@ -49,6 +49,19 @@ defaults write com.apple.dashboard mcx-disabled -bool true
 defaults write com.apple.dock dashboard-in-overlay -bool true
 
 # --------------–-------–--------–--------–-------–--–-----
+# SSD-specific tweaks
+# --------------–-------–--------–--------–-------–--–-----
+# Disable hibernation (speeds up entering sleep mode)
+sudo pmset -a hibernatemode 0
+
+# Disable the sudden motion sensor as it's not useful for SSDs
+sudo pmset -a sms 0
+
+# Save screenshots to a folder called Screenshots
+mkdir ~/Documents/Screenshots
+defaults write com.apple.screencapture location ~/Documents/Screenshots
+
+# --------------–-------–--------–--------–-------–--–-----
 # Kill affected applications
 # --------------–-------–--------–--------–-------–--–-----
 for app in "Dock" "Finder" "SystemUIServer"; do
