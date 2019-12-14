@@ -3,9 +3,6 @@
 # Ask for the administrator password upfront
 sudo -v
 
-# Use Dark theme
-defaults write ~/Library/Preferences/.GlobalPreferences AppleInterfaceStyle Dark
-
 # Disable the “Are you sure you want to open this application?" dialog
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 
@@ -42,11 +39,6 @@ defaults write NSGlobalDomain com.apple.springing.enabled -bool true
 
 # Avoid creating .DS_Store files on network volumes
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
-
-# Disable Dashboard
-defaults write com.apple.dashboard mcx-disabled -bool true
-# Don't show Dashboard as a Space
-defaults write com.apple.dock dashboard-in-overlay -bool true
 
 # --------------–-------–--------–--------–-------–--–-----
 # SSD-specific tweaks
