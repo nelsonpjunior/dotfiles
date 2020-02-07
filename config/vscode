@@ -1,19 +1,11 @@
 {
     "editor.minimap.enabled": false,
     "workbench.activityBar.visible": false,
-    "window.zoomLevel": 0,
-    "eslint.autoFixOnSave": true,
     "eslint.validate": [
         "javascript",
         "javascriptreact",
-        {
-            "language": "typescript",
-            "autoFix": true
-        },
-        {
-            "language": "typescriptreact",
-            "autoFix": true
-        }
+        "typescript",
+        "typescriptreact"
     ],
     "editor.renderWhitespace": "all",
     "files.exclude": {
@@ -21,8 +13,13 @@
     },
     "workbench.tips.enabled": false,
     "workbench.settings.enableNaturalLanguageSearch": false,
+    "workbench.iconTheme": "Monokai Pro Icons",
+    "workbench.colorTheme": "Monokai Pro",
+    "editor.fontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace",
+    "editor.tabSize": 2,
+    "editor.fontSize": 13,
     "workbench.startupEditor": "newUntitledFile",
-    "editor.fontFamily": "Operator Mono",
-    "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
-    "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons"
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
 }
