@@ -14,7 +14,8 @@ defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
 sudo systemsetup -setrestartfreeze on
 
 # Set the icon size of Dock items to 40 pixels
-defaults write com.apple.dock tilesize -int 40
+defaults write com.apple.dock tilesize -integer 40;
+defaults write com.apple.dock size-immutable -bool yes;
 
 # Change minimize/maximize window effect
 defaults write com.apple.dock mineffect -string "scale"
