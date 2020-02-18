@@ -5,12 +5,8 @@ Install resources and applications
 
 ```sh
 $ sudo softwareupdate -i -r
-$ sh install.sh
-$ sh os.sh
+$ sh os.sh && sh install.sh
 ```
-
-Tell Git who you are.
-> I prefer doing it in a separate gitlocal file, which is included in my gitconfig.
 
 ```
 $ git config -f ~/.gitlocal user.email "{Your email}"
